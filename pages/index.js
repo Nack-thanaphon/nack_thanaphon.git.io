@@ -20,51 +20,51 @@ export default function Home() {
             <div className="shadow-lg rounded-sm bg-white  h-full">
               <div className="my-3 p-3">
                 <h1 className="sm:text-3xl font-bold	">
-                  <i class="fab fa-gratipay text-blue-500"></i> SOMEDAY I WILL
+                  <i className="fab fa-gratipay text-blue-500"></i> SOMEDAY I WILL
                   BE WEB-DEVELOPER
                 </h1>
                 <ul className="py-5">
                   <p className="font-bold uppercase">
                     {" "}
-                    <i class="fab fa-gratipay text-blue-500"></i> Lastest
+                    <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>
                   <li className="mb-1 text-muted">
-                    <i class="fas fa-angle-right"></i> website : <a href=""></a>{" "}
+                    <i className="fas fa-angle-right"></i> website : <a href=""></a>{" "}
                   </li>
                   <li className="mb-1">
-                    <i class="fas fa-angle-right"></i> website : <a href=""></a>{" "}
+                    <i className="fas fa-angle-right"></i> website : <a href=""></a>{" "}
                   </li>
                   <li className="mb-1">
-                    <i class="fas fa-angle-right"></i> website : <a href=""></a>{" "}
+                    <i className="fas fa-angle-right"></i> website : <a href=""></a>{" "}
                   </li>
                   <li className="mb-1">
-                    <i class="fas fa-angle-right"></i> website : <a href=""></a>{" "}
+                    <i className="fas fa-angle-right"></i> website : <a href=""></a>{" "}
                   </li>
                   {/* <li>datavisualization </li>
                   <li>system Management</li> */}
                   <p className="font-bold uppercase">
                     {" "}
-                    <i class="fab fa-gratipay text-blue-500"></i> stack
+                    <i className="fab fa-gratipay text-blue-500"></i> stack
                   </p>
                   <li>website</li>
                   <li>datavisualization</li>
                   <li>system Management</li>
                   <p className="font-bold uppercase">
-                    <i class="fab fa-gratipay text-blue-500"></i> Design
+                    <i className="fab fa-gratipay text-blue-500"></i> Design
                   </p>
                   <div className="flex">
                     <li>
-                      <i class="fab fa-figma text-5xl p-4"></i>
+                      <i className="fab fa-figma text-5xl p-4"></i>
                     </li>
                     <li>
-                      <i class="fas fa-ad text-5xl p-4"></i>
+                      <i className="fas fa-ad text-5xl p-4"></i>
                     </li>
                   </div>
 
                   <p className="font-bold uppercase">
                     {" "}
-                    <i class="fab fa-gratipay text-blue-500"></i> Application
+                    <i className="fab fa-gratipay text-blue-500"></i> Application
                     Program
                   </p>
                   <li>Google Line sheet</li>
@@ -75,10 +75,10 @@ export default function Home() {
                   <p className="font-bold uppercase">Devops stack</p>
                   <div className="flex">
                     <li>
-                      <i class="fab fa-figma text-5xl p-4"></i>
+                      <i className="fab fa-figma text-5xl p-4"></i>
                     </li>
                     <li>
-                      <i class="fab fa-docker text-5xl p-4"></i>
+                      <i className="fab fa-docker text-5xl p-4"></i>
                     </li>
                   </div>
                 </ul>
@@ -149,42 +149,42 @@ export default function Home() {
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fab fa-facebook-square p-1 text-3xl"></i>
+                            <i className="fab fa-facebook-square p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fab fa-linkedin p-1 text-3xl"></i>
+                            <i className="fab fa-linkedin p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fab fa-line p-1 text-3xl"></i>
+                            <i className="fab fa-line p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fas fa-phone-square-alt p-1 text-3xl"></i>
+                            <i className="fas fa-phone-square-alt p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fas fa-envelope p-1 text-3xl"></i>
+                            <i className="fas fa-envelope p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="">
                           <a>
-                            <i class="fab fa-git-square p-1 text-3xl"></i>
+                            <i className="fab fa-git-square p-1 text-3xl"></i>
                           </a>
                         </Link>
                       </li>
