@@ -4,7 +4,7 @@ import Link from "next/link";
 import ContentCard from "../component/ContentCard";
 import Profile from "../component/Profile";
 
-export default function Home() {
+export default function index() {
   return (
     <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
       <Head>
