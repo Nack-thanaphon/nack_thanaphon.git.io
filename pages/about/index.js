@@ -29,7 +29,7 @@ export default function Home() {
                     <p className="text-5xl font-bold">About<span className="text-blue-500"> Me</span></p>
                   </div>
                   <div className="flex">
-                    <a href="./" className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  p-2 rounded-md m-1"><i className="fas fa-left"></i> Back</a>
+                    <Link href="./" className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  p-2 rounded-md m-1"><i className="fas fa-left"></i> Back</Link>
                     <button className="bg-gradient-to-r from-blue-500 to-blue-900 text-white p-2 rounded-md m-1"> <i className="fas fa-cloud-download"></i> Download</button>
                   </div>
                 </div>
