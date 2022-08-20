@@ -24,15 +24,15 @@ export default function Profile() {
             
             <ul className="text-center sm:text-start">
               <li className="py-1">
-                <h3 className="text-[25px] text-blue-600 font-bold">
+                <h3 className="text-[20px] uppercase text-blue-600 font-bold">
                   Self-Identify
                 </h3>
-                <p className="text-xl font-bold	uppercase m-0 p-0">
+                <p className="text-xl font-bold	 m-0 p-0">
                   Fail Fast Fail Forward
                 </p>
               </li>
               <li className="py-1">
-                <h3 className="text-[25px] text-blue-600 font-bold">
+                <h3 className="text-[20px] uppercase text-blue-600 font-bold">
                   Education
                 </h3>
                 <small>
@@ -45,7 +45,7 @@ export default function Profile() {
                 </small>
               </li>
               <li className="py-1">
-                <h3 className="text-[25px] text-blue-600 font-bold">Job Experience</h3>
+                <h3 className="text-[20px] uppercase text-blue-600 font-bold">Job Experience</h3>
                 <small>
                   <ul className="text-center sm:text-start">
                    
@@ -124,7 +124,7 @@ export default function Profile() {
                 </small>
               </li>
               <li className="py-2">
-                <h3 className="text-[25px] text-blue-600 font-bold">
+                <h3 className="text-[20px] uppercase text-blue-600 font-bold">
                   Social
                 </h3>
 
@@ -157,17 +157,11 @@ export default function Profile() {
                       </a>
                     </Link>
                   </li>
+                 
                   <li>
                     <Link href="">
                       <a>
-                        <i className="fas fa-envelope  p-1 text-2xl"></i>
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="">
-                      <a>
-                        <i className="fab fa-git-square  text-red-600 p-1 text-2xl"></i>
+                        <i className="fab fa-git-square  text-black-600 p-1 text-2xl"></i>
                       </a>
                     </Link>
                   </li>
