@@ -21,13 +21,13 @@ export default function Home() {
           <div className="p-0 ">
             <div className="shadow-lg rounded-sm bg-white  h-full">
               <div className="my-3 p-3">
-                
+
                 <div className="flex justify-between py-3 my-auto">
                   <div className="my-auto">
                     <p className="sm:text-5xl text-3xl font-bold">DEV<span className="text-blue-500">LOG.</span></p>
                   </div>
                   <div className="flex">
-                    <Link href="/about" className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i> About Me</Link>
+                    <button className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i> About Me</button>
                     <button className="bg-gradient-to-r from-blue-500 to-blue-900 text-white sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download</button>
                   </div>
                 </div>
@@ -45,8 +45,8 @@ export default function Home() {
                     <ContentCard />
                   </li>
 
-                 
-                 
+
+
                 </ul>
               </div>
             </div>
