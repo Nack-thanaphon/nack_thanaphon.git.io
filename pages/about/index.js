@@ -31,7 +31,7 @@ export default function Home() {
                                             </a>
                                         </Link>
                                         <Link href={'/สมัครงาน.pdf'}>
-                                            <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download(.pdf)
+                                            <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download
                                             </a>
                                         </Link>
                                     </div>
