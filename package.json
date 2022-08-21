@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "gh-pages": "^4.0.0",
-    "markdown-it": "^13.0.1",
     "next": "12.2.5",
     "react": "^18.2.0",
     "react-dom": "18.2.0"
