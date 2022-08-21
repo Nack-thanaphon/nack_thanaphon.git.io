@@ -11,7 +11,7 @@ function Card_order() {
     async function fetchAll() {
       setLoading(true);
       const resp = await fetch(
-        "http://localhost:1337/api/products?populate=p_img"
+        "https://jsonplaceholder.typicode.com/users/"
       );
       const data = await resp.json();
       setData(data);
@@ -25,27 +25,19 @@ function Card_order() {
 
   return (
     <>
-      {product.data.map((product) => (
+      {product.map((product) => (
         <>
           <>
             <a className="sm:grid grid-cols-3 my-5 border shadow-sm">
               <div className="col-span-1">
-                <img
-                  src={
-                    "http://localhost:1337" +
-                    product.attributes.p_img.data.attributes.url
-                  }
-                  alt={product.attributes.p_title}
-                  className=" w-full object-cover md:h-full "
-                  width="100%"
-                />
+               
               </div>
               <div className="m-1 sm:p-3 col-span-2 flex flex-col justify-between">
                 <p className="sm:text-3xl text-xl font-bold text-start py-4">
-                  {product.attributes.title}
+                  
                 </p>
                 <p>
-                  {product.attributes.detail}
+                
                   <Link href={"content/" + [product.id]}>
                     <a>อ่านต่อ</a>
                   </Link>
@@ -57,18 +49,18 @@ function Card_order() {
                   <p>
                     Stack:
                     <span className="w-fit	 rounded-full bg-blue-500 text-white uppercase  px-2 py-1 text-xs font-bold mr-3">
-                      #{product.attributes.type}
+                    
                     </span>
                   </p>
                   Link:
                   <a
-                    href={`${product.attributes.link}`}
+                    href={`${product.username}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Foo
                   </a>
-                  <p>Date: {product.attributes.date}</p>
+                  <p>Date: {product.name}</p>
                   <p>By: Nack_thanaphon</p>
                 </div>
               </div>
