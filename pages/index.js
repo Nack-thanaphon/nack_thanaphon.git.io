@@ -27,11 +27,11 @@ export default function Home() {
                   </div>
                   <div className="flex">
                     <Link href={'/about'}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i> About Me
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i>About Me
                       </a>
                     </Link>
                     <Link href={'/สมัครงาน.pdf'}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i>Download
                       </a>
                     </Link>
                   </div>

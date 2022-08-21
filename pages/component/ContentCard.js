@@ -29,10 +29,7 @@ function Card_order() {
             <a className="sm:grid grid-cols-3 my-5 border shadow-sm">
               <div className="col-span-1">
                 <img
-                  src={
-                    "https://info-aun-hpn.com/bos/" +
-                    posts.image
-                  }
+                  src={"https://info-aun-hpn.com/bos/" +posts.image}
                   alt={posts.title}
                   className=" w-full object-cover md:h-full "
                   width="100%"
@@ -43,7 +40,7 @@ function Card_order() {
                   {posts.name}
                 </p>
                 <p>
-                  {posts.detail}
+                  
                   <Link href={"content/" + [posts.id]}>
                     <a>อ่านต่อ</a>
                   </Link>
