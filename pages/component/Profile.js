@@ -20,7 +20,7 @@ export default function Profile() {
             <div className="sm:text-3xl font-bold  text-center sm:text-start">
               Thanaphon Kallapapruek
             </div>
-            <p className="sm:text-start text-center pb-3">Web-developer</p>
+            <p className="sm:text-start text-center pb-3 uppercase">Web-developer</p>
             
             <ul className="text-center sm:text-start">
               <li className="py-1">
@@ -38,7 +38,7 @@ export default function Profile() {
                 <small>
                   <ul className="text-center sm:text-start">
                     <li className="font-bold uppercase">
-                      2515-2518 : Religion and Social Study
+                      2015-2018 : Religion and Social Study
                     </li>
                     <li>@Mahidol University</li>
                   </ul>
@@ -114,7 +114,7 @@ export default function Profile() {
                   </ul>
                   <ul className="text-center sm:text-start">
                     <li className="font-bold uppercase">
-                      25-NOW : Webdeveloper
+                      2022-NOW : Web-developer
                     </li>
                     <li>
                       @Faculty of Medicine Siriraj Hospital, Mahidol

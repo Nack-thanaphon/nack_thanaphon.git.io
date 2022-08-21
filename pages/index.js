@@ -16,19 +16,24 @@ export default function Home() {
           referrerpolicy="no-referrer"
         />
       </Head>
-      <div className="grid sm:grid-cols-3 mx-auto">
+      <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
-          <div className="p-0 ">
+          <div className="p-1">
             <div className="shadow-lg rounded-sm bg-white  h-full">
               <div className="my-3 p-3">
-
                 <div className="flex justify-between py-3 my-auto">
                   <div className="my-auto">
                     <p className="sm:text-5xl text-3xl font-bold">DEV<span className="text-blue-500">LOG.</span></p>
                   </div>
                   <div className="flex">
-                    <button className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i> About Me</button>
-                    <button className="bg-gradient-to-r from-blue-500 to-blue-900 text-white sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download</button>
+                    <Link href={'/about'}>
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i> About Me
+                      </a>
+                    </Link>
+                    <Link href={'/สมัครงาน.pdf'}>
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i> Download(.pdf)
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 <hr />
@@ -40,13 +45,8 @@ export default function Home() {
                   </p>
                   <li className="mb-1 text-muted">
                     <ContentCard />
-                    <ContentCard />
-                    <ContentCard />
-                    <ContentCard />
+
                   </li>
-
-
-
                 </ul>
               </div>
             </div>
