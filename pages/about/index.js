@@ -67,7 +67,7 @@ export default function Home() {
                                             <img
                                                 width={50}
                                                 height={50}
-                                                src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536785.png?token=exp=1660961421~hmac=b9f9674c032953e8b8767aafe004cf32"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LINE_New_App_Icon_%282020-12%29.png"
                                                 alt=""
                                             />
                                         </li>
