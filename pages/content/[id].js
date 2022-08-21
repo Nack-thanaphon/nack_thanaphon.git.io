@@ -1,105 +1,82 @@
-function user({ users }) {
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import ContentCard from "../component/ContentCard";
+import Profile from "../component/Profile";
+
+
+function posts({ posts }) {
   return (
-    <div className="container ">
-      <div className="sm:flex justify-between w-full mx-auto ">
-        <a
-          href="../"
-          className="text-dark  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm text-center m-6 pt-5 "
-        >
-         กลับ
-        </a>
-        <div className="m-3">
-          <div className="max-w-100 bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img
-                className="rounded-t-lg w-full"
-                src="https://images.unsplash.com/photo-1656078770465-fe503a595406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                alt="product image"
-              />
-            </a>
-            <div className="px-5 pb-5">
-              <a href="#">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
-                </h5>
-              </a>
-              <div className="flex items-center mt-2.5 mb-5">
-                <svg
-                  className="w-5 h-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  className="w-5 h-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  className="w-5 h-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  className="w-5 h-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg
-                  className="w-5 h-5 text-yellow-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                  5.0
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                  $599
-                </span>
-                <a
-                  href="#"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Add to cart
-                </a>
+    <>
+      {/* <h1>{posts.data.attributes.title}</h1> */}
+
+      <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
+        <Head>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossOrigin="anonymous"
+            referrerpolicy="no-referrer"
+          />
+        </Head>
+        <div className="grid sm:grid-cols-3 ">
+          <div className="sm:col-span-2 sm:m-5 ">
+            <div className="p-1">
+              <div className="shadow-lg rounded-sm bg-white  h-screen">
+                <div className="my-3 p-3">
+                  <div className="flex justify-between py-3 my-auto">
+                    <div className="my-auto">
+                      <p className="sm:text-5xl text-3xl font-bold">
+                        DEV<span className="text-blue-500">LOG.</span>
+                      </p>
+                    </div>
+                    <div className="flex">
+                      <Link href={"/"}>
+                        <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
+                          <i className="fas fa-clipboard-list"></i> Back
+                        </a>
+                      </Link>
+                      <Link href={"/สมัครงาน.pdf"}>
+                        <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
+                          <i className="fas fa-cloud-download"></i>{" "}
+                          Download(.pdf)
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                  <hr />
+                  <ul className="py-5">
+                   
+                    <h1>{posts.data.attributes.title}</h1>
+
+                    <div>{posts.data.attributes.detail}</div>
+                  
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+          <Profile />
         </div>
-        <div className="m-3">Lorem ipsum dolor sit amet.</div>
       </div>
-    </div>
+    </>
   );
 }
-export default user;
+export default posts;
 
 export async function getStaticPaths() {
-  const resp = await fetch(`https://jsonplaceholder.typicode.com/users/`);
+  const resp = await fetch(`http://localhost:1337/api/products?populate=p_img`);
   const data = await resp.json();
 
-  const paths = data.map((user) => {
+  const paths = data.data.map((posts) => {
     return {
       params: {
-        id: `${user.id}`,
+        id: `${posts.id}`,
       },
     };
   });
+
   return {
     paths,
     fallback: false,
@@ -108,14 +85,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const resp = await fetch(
-    `https://jsonplaceholder.typicode.com/users/${params.id}`
-  );
+  const resp = await fetch(`http://localhost:1337/api/products/${params.id}`);
   const data = await resp.json();
 
   return {
     props: {
-      users: data,
+      posts: data,
     },
   };
 }
