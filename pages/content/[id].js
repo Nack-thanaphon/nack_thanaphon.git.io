@@ -23,7 +23,7 @@ function posts({ posts }) {
         <div className="grid sm:grid-cols-3 ">
           <div className="sm:col-span-2 sm:m-5 ">
             <div className="p-1">
-              <div className="shadow-lg rounded-sm bg-white  h-screen">
+              <div className="shadow-lg rounded-sm bg-white  h-full">
                 <div className="my-3 p-3">
                   <div className="flex justify-between py-3 my-auto">
                     <div className="my-auto">
