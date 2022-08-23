@@ -39,7 +39,7 @@ export default function Home() {
                 <hr />
                 <ul className="py-5">
                   <p className="font-bold uppercase">
-                    {" "}
+        
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>

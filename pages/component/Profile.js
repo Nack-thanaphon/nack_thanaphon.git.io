@@ -50,65 +50,65 @@ export default function Profile() {
                   <ul className="text-center sm:text-start">
                    
                     <li>
-                      <div className="flex sm:justify-start justify-center my-3">
+                      <ul className="flex sm:justify-start justify-center my-3">
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="/gibbon.jpg"
                             alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://upload.wikimedia.org/wikipedia/commons/4/45/Mahidol_U.png"
                             alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://medias.unifrance.org/medias/36/139/232228/format_hd/wetv.jpg"
                             alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://yt3.ggpht.com/ytc/AMLnZu-W4SowAHU_G_FEra9SiEXD2yr1x7QlXRg3MGSmrA=s900-c-k-c0x00ffffff-no-rj"
                             alt="tailwind css"
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://cf.shopee.co.th/file/a6488cd1f1d04772d961df1aa79aaea4"
                             alt="tailwind css"
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://aun-hpn.or.th/img/logo/Logo.png"
                             alt="tailwind css"
                           />
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width={25}
-                            height={25}
+                            width="25px"
+                            height="25px"
                             src="https://www.mugh.or.th/img/logo2.jpg"
                             alt="tailwind css"
                           />
                         </li>
                        
-                      </div>
+                      </ul>
 
                     </li>
                   </ul>

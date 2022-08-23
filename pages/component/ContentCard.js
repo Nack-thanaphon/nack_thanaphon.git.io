@@ -19,14 +19,14 @@ function Card_order() {
   }, []);
 
   if (isLoading) return <p>Loading...</p>;
-  if (!posts) return <p>No profile data</p>;
+  if (!posts) return <p>No data</p>;
 
   return (
     <>
       {posts.result.map((posts) => (
         <>
           <>
-            <a className="sm:grid grid-cols-3 my-5 border shadow-sm">
+            <a className="sm:grid grid-cols-3 my-5 border shadow-sm" key={posts.id}>
               <div className="col-span-1">
                 <img
                   src={"https://www.โลมา.com/bos/" + posts.image}
@@ -51,7 +51,7 @@ function Card_order() {
                   </p>
                   <p>
                     Stack:
-                    <span className="w-fit	 rounded-full bg-blue-500 text-white uppercase  px-2 py-1 text-xs font-bold mr-3">
+                    <span className="w-fitrounded-full bg-blue-500 text-white uppercase  px-2 py-1 text-xs font-bold mr-3">
                       #{posts.type}
                     </span>
                   </p>

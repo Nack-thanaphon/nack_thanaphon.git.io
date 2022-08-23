@@ -40,7 +40,7 @@ function posts({ posts }) {
                       <Link href={"/สมัครงาน.pdf"}>
                         <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
                           <i className="fas fa-cloud-download"></i>{" "}
-                          Download(.pdf)
+                          Download
                         </a>
                       </Link>
                     </div>
@@ -49,14 +49,14 @@ function posts({ posts }) {
                   <ul className="py-5">
                     {posts.result.map((post) => {
                       return <>
-                        <h1 className="text-3xl">{post.name}</h1>
+                        <h1 className="text-3xl" key={post.id} >{post.name}</h1>
                         <img
                           src={"https://www.โลมา.com/bos/" + post.image}
                           alt={post.title}
                           className="w-full object-cover md:h-full py-5"
                           width="100%"
                         />
-                        {post.detail}
+                        
                       </>
                     })}
                   </ul>
