@@ -10,7 +10,7 @@ function Card_order() {
   useEffect(() => {
     async function fetchAll() {
       setLoading(true);
-      const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_news.php");
+      const resp = await fetch("https://www.โลมา.com/api/get_news.php");
       const data = await resp.json();
       setData(data);
       setLoading(false);
@@ -29,7 +29,7 @@ function Card_order() {
             <a className="sm:grid grid-cols-3 my-5 border shadow-sm">
               <div className="col-span-1">
                 <img
-                  src={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
+                  src={"https://www.โลมา.com/bos/" + posts.image}
                   alt={posts.title}
                   className=" w-full object-cover md:h-full "
                   width="100%"
