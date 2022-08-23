@@ -38,7 +38,7 @@ export default function Profile() {
                 <small>
                   <ul className="text-center sm:text-start">
                     <li className="font-bold uppercase">
-                      2015-2018 : Religion and Social Study
+                      2015-2018 : Religion Study
                     </li>
                     <li>@Mahidol University</li>
                   </ul>

@@ -57,6 +57,7 @@ function posts({ posts }) {
                           width="100%"
                         />
                       </div>
+                      <div dangerouslySetInnerHTML={{ __html: post.detail }}></div>
                     </>
                   })}
                 </div>
