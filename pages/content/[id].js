@@ -84,7 +84,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { params } = context;
   const resp = await fetch(`https://dev-log.xn--y3ch4b7c.com/api/get_news_id.php?id=${params.id}`);
   const data = await resp.json();
