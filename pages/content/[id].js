@@ -47,8 +47,8 @@ function posts({ posts }) {
                   </div>
                   <hr />
                   {posts.result.map((post) => {
-                    <div className="py-5" key={post.id} >
-                      return <>
+                    return <>
+                      <div className="py-5" key={post.id} >
                         <h1 className="text-3xl"  >{post.name}</h1>
                         <img
                           src={"https://www.โลมา.com/bos/" + post.image}
@@ -56,8 +56,8 @@ function posts({ posts }) {
                           className="w-full object-cover md:h-full py-5"
                           width="100%"
                         />
-                      </>
-                    </div>
+                      </div>
+                    </>
                   })}
                 </div>
               </div>
