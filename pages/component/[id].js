@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import ContentCard from "../component/ContentCard";
-import Profile from "../component/Profile";
+import ContentCard from "./ContentCard";
+import Profile from "./Profile";
 
 
 function posts({ posts }) {
@@ -78,7 +78,7 @@ export async function getStaticPaths() {
   const paths = data.result.map((posts) => {
     return {
       params: {
-        id: `${posts.id}`,
+        id: posts.id ,
       },
     };
   });

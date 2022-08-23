@@ -51,7 +51,7 @@ function Card_order() {
                   </p>
                   <p>
                     Stack:
-                    <span className="w-fitrounded-full bg-blue-500 text-white uppercase  px-2 py-1 text-xs font-bold mr-3">
+                    <span className="w-fit  text-blue-500  uppercase  px-2 py-1 text-xs font-bold mr-3">
                       #{posts.type}
                     </span>
                   </p>
