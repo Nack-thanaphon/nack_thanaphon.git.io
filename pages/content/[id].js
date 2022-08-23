@@ -6,9 +6,9 @@ import Profile from "../component/Profile";
 
 
 function posts({ posts }) {
+
   return (
     <>
-      {/* <h1>{posts.title}</h1> */}
 
       <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
         <Head>
@@ -47,11 +47,12 @@ function posts({ posts }) {
                   </div>
                   <hr />
                   <ul className="py-5">
-                   
-                    <h1>{posts.n_name}</h1>
-
-                    <div>{posts.detail}</div>
-                  
+                    {posts.result.map((data) => {
+                      return <>
+                        <h1>{data.name}</h1>
+                        {data.detail}
+                      </>
+                    })}
                   </ul>
                 </div>
               </div>
@@ -66,7 +67,7 @@ function posts({ posts }) {
 export default posts;
 
 export async function getStaticPaths() {
-  const resp = await fetch(`https://www.info-aun-hpn.com/api/get_news_limit3.php`);
+  const resp = await fetch(`https://dev-log.xn--y3ch4b7c.com/api/get_news.php`);
   const data = await resp.json();
 
   const paths = data.result.map((posts) => {
@@ -85,10 +86,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const resp = await fetch(`https://www.info-aun-hpn.com/api/single_news.php?id=${params.id}`);
+  const resp = await fetch(`https://dev-log.xn--y3ch4b7c.com/api/get_news_id.php?id=${params.id}`);
   const data = await resp.json();
 
-  console.log(data)
   return {
     props: {
       posts: data,
