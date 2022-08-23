@@ -47,10 +47,16 @@ function posts({ posts }) {
                   </div>
                   <hr />
                   <ul className="py-5">
-                    {posts.result.map((data) => {
+                    {posts.result.map((post) => {
                       return <>
-                        <h1>{data.name}</h1>
-                        {data.detail}
+                        <h1>{post.name}</h1>
+                        <img
+                          src={"https://xn--y3ch4b7c.com/" + post.image}
+                          alt={post.title}
+                          className="w-full object-cover md:h-full "
+                          width="100%"
+                        />
+                        {post.detail}
                       </>
                     })}
                   </ul>
@@ -67,7 +73,7 @@ function posts({ posts }) {
 export default posts;
 
 export async function getStaticPaths() {
-  const resp = await fetch(`https://dev-log.xn--y3ch4b7c.com/api/get_news.php`);
+  const resp = await fetch(`https://xn--y3ch4b7c.com/api/get_news.php`);
   const data = await resp.json();
 
   const paths = data.result.map((posts) => {
@@ -86,7 +92,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const resp = await fetch(`https://dev-log.xn--y3ch4b7c.com/api/get_news_id.php?id=${params.id}`);
+  const resp = await fetch(`https://xn--y3ch4b7c.com/api/get_news_id.php?id=${params.id}`);
   const data = await resp.json();
 
   return {
