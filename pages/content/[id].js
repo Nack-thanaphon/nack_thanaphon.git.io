@@ -49,11 +49,11 @@ function posts({ posts }) {
                   <ul className="py-5">
                     {posts.result.map((post) => {
                       return <>
-                        <h1>{post.name}</h1>
+                        <h1 className="text-3xl">{post.name}</h1>
                         <img
-                          src={"https://xn--y3ch4b7c.com/" + post.image}
+                          src={"https://xn--y3ch4b7c.com/bos/" + post.image}
                           alt={post.title}
-                          className="w-full object-cover md:h-full "
+                          className="w-full object-cover md:h-full py-5"
                           width="100%"
                         />
                         {post.detail}
