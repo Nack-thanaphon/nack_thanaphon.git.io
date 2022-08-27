@@ -10,11 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "axios": "^0.27.2",
+    "fancybox": "^3.0.1",
     "gh-pages": "^4.0.0",
     "next": "12.2.5",
     "react": "^18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-fancybox": "^0.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
