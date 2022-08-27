@@ -11,7 +11,7 @@ function Card_order() {
   useEffect(() => {
     async function fetchAll() {
       setLoading(true);
-      const resp = await fetch("https://www.โลมา.com/api/get_news.php");
+      const resp = await fetch("https://www.info-mugh.com/api/get_news.php");
       const data = await resp.json();
       setData(data);
       setLoading(false);
@@ -27,15 +27,15 @@ function Card_order() {
       {posts.result.map((posts) => (
         <>
           <>
-            <a className="sm:grid grid-cols-3 my-5  shadow-lg" key={posts.id}>
+            <a className="sm:grid grid-cols-3 my-5  shadow-lg" key={posts.n_id}>
               <div className="col-span-1 m-2">
                 <a
-                  href={"https://www.โลมา.com/bos/" + posts.image}
+                  href={"https://www.โลมา.com/bos/" + posts.n_image}
                   data-fancybox="gallery"
                   data-caption=""
                 >
                   <img
-                    src={"https://www.โลมา.com/bos/" + posts.image}
+                    src={"https://www.โลมา.com/bos/" + posts.n_image}
                     alt={posts.title}
                     className=" w-full object-cover md:h-full "
                     width="100%"
@@ -47,18 +47,18 @@ function Card_order() {
                   {posts.name}
                 </p>
                 <p>
-                  <Link href={"content/" + [posts.id]}>
+                  <Link href={"content/" + [posts.n_id]}>
                     <a className="text-blue-500">อ่านต่อ..</a>
                   </Link>
                 </p>
                 <div className="border-l-8  border-l-blue-600 ">
                   <div className="ml-3">
                     <p>
-                      Type: <span className="font-bold">{posts.type}</span>
+                      Type: <span className="font-bold">{posts.n_type}</span>
                     </p>
                     Link:
                     <a
-                      href={`${posts.link}`}
+                      href={`${posts.n_link}`}
                       className="text-blue-500"
                       target="_blank"
                       rel="noopener noreferrer"
