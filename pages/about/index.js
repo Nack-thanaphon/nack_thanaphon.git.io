@@ -41,7 +41,7 @@ export default function Home() {
                   </div>
                 </div>
                 <hr />
-                <div className="py-5 p-3">
+                <div className="py-5 sm:p-3">
                   <p className="py-3 text-lg uppercase font-bold  text-blue-800">
                     <i className="fab fa-gratipay text-blue-500"></i> About Me
                   </p>
@@ -110,100 +110,100 @@ export default function Home() {
                     efficient. Develop databases and design systems for
                     departments within the hospital.
                   </p>
+
+                  <ul className="py-5">
+                    <p className="font-bold uppercase">
+                      <i className="fab fa-gratipay text-blue-500"></i> Design
+                    </p>
+                    <div className="flex">
+                      <li>
+                        <i className="fab fa-figma text-5xl p-4"></i>
+                      </li>
+                      <li>
+                        <i className="fas fa-ad text-5xl p-4"></i>
+                      </li>
+                    </div>
+                    <p className="font-bold uppercase">
+                      <i className="fab fa-gratipay text-blue-500"></i>{" "}
+                      Application Program
+                    </p>
+                    <div className="flex my-3">
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://cdn-icons-png.flaticon.com/512/281/281761.png"
+                          alt=""
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LINE_New_App_Icon_%282020-12%29.png"
+                          alt=""
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                          alt=""
+                        />
+                      </li>
+
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://cdn-icons-png.flaticon.com/512/1/1975.png"
+                          alt=""
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://cdn-icons-png.flaticon.com/512/919/919836.png"
+                          alt=""
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfA9saZjv6q5LESFvG0kFqCWKyDY8GSwcY9TDkTFkTay-zXp30U2ydvFQoEYBMeh2mg4c&usqp=CAU"
+                          alt=""
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://www.drupal.org/files/project-images/screenshot_361.png"
+                          alt="tailwind css"
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://i0.wp.com/devbanban.com/wp-content/uploads/2018/05/ci.png?fit=431%2C512&ssl=1"
+                          alt="tailwind css"
+                        />
+                      </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
+                          alt="tailwind css"
+                        />
+                      </li>
+                    </div>
+                  </ul>
                 </div>
-
-                <ul className="py-5">
-                  <p className="font-bold uppercase">
-                    <i className="fab fa-gratipay text-blue-500"></i> Design
-                  </p>
-                  <div className="flex">
-                    <li>
-                      <i className="fab fa-figma text-5xl p-4"></i>
-                    </li>
-                    <li>
-                      <i className="fas fa-ad text-5xl p-4"></i>
-                    </li>
-                  </div>
-                  <p className="font-bold uppercase">
-                    <i className="fab fa-gratipay text-blue-500"></i>{" "}
-                    Application Program
-                  </p>
-                  <div className="flex my-3">
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://cdn-icons-png.flaticon.com/512/281/281761.png"
-                        alt=""
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LINE_New_App_Icon_%282020-12%29.png"
-                        alt=""
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
-                        alt=""
-                      />
-                    </li>
-
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://cdn-icons-png.flaticon.com/512/1/1975.png"
-                        alt=""
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://cdn-icons-png.flaticon.com/512/919/919836.png"
-                        alt=""
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfA9saZjv6q5LESFvG0kFqCWKyDY8GSwcY9TDkTFkTay-zXp30U2ydvFQoEYBMeh2mg4c&usqp=CAU"
-                        alt=""
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://www.drupal.org/files/project-images/screenshot_361.png"
-                        alt="tailwind css"
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://i0.wp.com/devbanban.com/wp-content/uploads/2018/05/ci.png?fit=431%2C512&ssl=1"
-                        alt="tailwind css"
-                      />
-                    </li>
-                    <li className="my-auto m-2">
-                      <img
-                        width={50}
-                        height={50}
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
-                        alt="tailwind css"
-                      />
-                    </li>
-                  </div>
-                </ul>
               </div>
             </div>
           </div>
