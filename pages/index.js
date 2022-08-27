@@ -15,6 +15,8 @@ export default function Home() {
           crossOrigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <title>Dev-Log | Log Everything I got</title>
+       
       </Head>
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
@@ -39,7 +41,7 @@ export default function Home() {
                 <hr />
                 <ul className="py-5">
                   <p className="font-bold uppercase">
-        
+
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>

@@ -41,7 +41,7 @@ export default function Home() {
                   </div>
                 </div>
                 <hr />
-                <div className="py-5 sm:p-3">
+                <div className="py-5 ">
                   <p className="py-3 text-lg uppercase font-bold  text-blue-800">
                     <i className="fab fa-gratipay text-blue-500"></i> About Me
                   </p>
