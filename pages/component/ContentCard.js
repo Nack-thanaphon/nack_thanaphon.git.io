@@ -26,8 +26,11 @@ function Card_order() {
       {posts.result.map((posts) => (
         <>
           <>
-            <a className="sm:grid grid-cols-3 my-5 border shadow-sm" key={posts.id}>
-              <div className="col-span-1">
+            <a
+              className="sm:grid grid-cols-3 my-5  shadow-lg"
+              key={posts.id}
+            >
+              <div className="col-span-1 m-2">
                 <img
                   src={"https://www.โลมา.com/bos/" + posts.image}
                   alt={posts.title}
@@ -35,39 +38,36 @@ function Card_order() {
                   width="100%"
                 />
               </div>
-              <div className="m-1 sm:p-3 col-span-2 flex flex-col justify-between">
-                <p className="sm:text-3xl text-xl font-bold text-start py-4">
+              <div className="m-2   col-span-2 flex flex-col justify-between">
+                <p className="sm:text-3xl pt-3 sm:pt-0 text-2xl font-bold text-start ">
                   {posts.name}
                 </p>
                 <p>
-
                   <Link href={"content/" + [posts.id]}>
-                    <a>อ่านต่อ</a>
+                    <a className="text-blue-500">อ่านต่อ..</a>
                   </Link>
                 </p>
-                <div className="border-l-8 border border-l-blue-600 pl-3 my-2">
-                  <p>
-                    Type: <span className="font-bold">System Management</span>
-                  </p>
-                  <p>
-                    Stack:
-                    <span className="w-fit  text-blue-500  uppercase  px-2 py-1 text-xs font-bold mr-3">
-                      #{posts.type}
-                    </span>
-                  </p>
-                  Link:
-                  <a
-                    href={`${posts.link}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Foo
-                  </a>
-                  <p>Date: {posts.date}</p>
-                  <p>By: {posts.user_id}</p>
+                <div className="border-l-8  border-l-blue-600 ">
+                  <div className="ml-3">
+                    <p>
+                      Type: <span className="font-bold">System Management</span>
+                    </p>
+                    Link:
+                    <a
+                      href={`${posts.link}`}
+                      className="text-blue-500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ลิงค์
+                    </a>
+                    <p>Date: {posts.date}</p>
+                    <p>By: {posts.user_id}</p>
+                  </div>
                 </div>
               </div>
             </a>
+            <hr />
           </>
         </>
       ))}

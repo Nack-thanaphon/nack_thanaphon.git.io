@@ -21,7 +21,7 @@ export default function Profile() {
               Thanaphon Kallapapruek
             </div>
             <p className="sm:text-start text-center pb-3 uppercase">Web-developer</p>
-            
+
             <ul className="text-center sm:text-start">
               <li className="py-1">
                 <h3 className="text-[20px] uppercase text-blue-600 font-bold">
@@ -48,7 +48,7 @@ export default function Profile() {
                 <h3 className="text-[20px] uppercase text-blue-600 font-bold">Job Experience</h3>
                 <small>
                   <ul className="text-center sm:text-start">
-                   
+
                     <li>
                       <ul className="flex sm:justify-start justify-center my-3">
                         <li className="my-auto m-2">
@@ -101,13 +101,13 @@ export default function Profile() {
                         </li>
                         <li className="my-auto m-2">
                           <img
-                            width="25px"
-                            height="25px"
-                            src="https://www.mugh.or.th/img/logo2.jpg"
+                            width="40px"
+                            height="40px"
+                            src="https://www.mugh.or.th/issets/img/footer/logo.jpg"
                             alt="tailwind css"
                           />
                         </li>
-                       
+
                       </ul>
 
                     </li>
@@ -130,38 +130,38 @@ export default function Profile() {
 
                 <ul className="flex justify-center sm:justify-start ">
                   <li>
-                    <Link href="">
+                    <Link href="https://web.facebook.com/learner.infinity.39">
                       <a>
-                        <i className="fab fa-facebook-square text-blue-600 p-1 text-2xl"></i>
+                        <i className="fab fa-facebook-square p-1 text-2xl"></i>
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="">
                       <a>
-                        <i className="fab fa-linkedin  text-blue-700 p-1 text-2xl"></i>
+                        <i className="fab fa-linkedin  p-1 text-2xl"></i>
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="">
                       <a>
-                        <i className="fab fa-line p-1  text-green-600 text-2xl"></i>
+                        <i className="fab fa-line p-1  text-2xl"></i>
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="">
                       <a>
-                        <i className="fas fa-phone-square-alt  text-green-400 p-1 text-2xl"></i>
+                        <i className="fas fa-phone-square-alt   p-1 text-2xl"></i>
                       </a>
                     </Link>
                   </li>
-                 
+
                   <li>
-                    <Link href="">
+                    <Link href="https://github.com/Nack-thanaphon">
                       <a>
-                        <i className="fab fa-git-square  text-black-600 p-1 text-2xl"></i>
+                        <i className="fab fa-git-square  p-1 text-2xl"></i>
                       </a>
                     </Link>
                   </li>
