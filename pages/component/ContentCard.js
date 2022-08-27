@@ -11,7 +11,7 @@ function Card_order() {
   useEffect(() => {
     async function fetchAll() {
       setLoading(true);
-      const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_news.php");
+      const resp = await fetch("https://www.โลมา.com/api/get_news.php");
       const data = await resp.json();
       setData(data);
       setLoading(false);
