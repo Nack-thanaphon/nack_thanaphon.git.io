@@ -47,8 +47,8 @@ export default function Home() {
                   </p>
                   <div className="sm:grid grid-cols-3">
                     <div className="col-span-2">
-                      <p className="text-justify ">
-                        <p className="text-2xl font-bold pb-3">
+                      <p className="">
+                        <p className="text-xl font-bold pb-3">
                           Thanapon Kalapapruek (Nack)
                         </p>
                         holds a bachelor's degree in religion and society.
