@@ -8,20 +8,20 @@ import { useState } from "react";
 
 
 
-// const handleClick = (e, tag) => {
-//     const card = document.getElementsByClassName("news_card")
-//     const card2 = document.getElementsByClassName(tag)
+const handleClick = (e, tag) => {
+    const card = document.getElementsByClassName("news_card")
+    var card2 = document.getElementsByClassName(tag)
 
-//     console.log(tag)
-//     card[0].style.display = 'none'
+    console.log(tag)
+    card[0].style.display = 'none'
 
-//     if (tag == "all") {
-//         card.style.display = 'block'
-//     } else {
-//         card2.style.display = 'block'
-//     }
+    if (tag == "all") {
+        card.style.display = 'block'
+    } else {
+        card2.style.display = 'block'
+    }
 
-// }
+}
 
 
 function Filter() {
@@ -39,7 +39,7 @@ function Filter() {
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
-                    หมวดหมู่
+                    Options
                     <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                 </Menu.Button>
             </div>
@@ -58,8 +58,7 @@ function Filter() {
                     <div className="py-1">
                         {typeData?.map((resp) => {
                             return (
-                                <Menu.Item 
-                                // <Menu.Item onClick={(e) => handleClick(e, resp.type)}
+                                <Menu.Item onClick={(e) => handleClick(e, resp.type)}
                                 >
                                     <a
                                         href="#"
