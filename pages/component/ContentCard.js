@@ -7,7 +7,6 @@ import "fancybox/dist/css/jquery.fancybox.css";
 function Card_order() {
   const [posts, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
-
   useEffect(() => {
     async function fetchAll() {
       setLoading(true);
@@ -26,8 +25,14 @@ function Card_order() {
     <>
       {posts.result.map((posts) => (
         <>
-          <>
-            <a className="sm:grid grid-cols-3 my-5  shadow-lg" key={posts.id}>
+          
+            <a
+              className={
+                "sm:grid grid-cols-3 my-5 border   shadow-lg " +
+                `news_card  ${posts.type}`
+              }
+              key={posts.id}
+            >
               <div className="col-span-1 m-2">
                 <a
                   href={"https://www.โลมา.com/bos/" + posts.image}
@@ -51,20 +56,21 @@ function Card_order() {
                     <a className="text-blue-500">อ่านต่อ..</a>
                   </Link>
                 </p>
-                <div className="border-l-8  border-l-blue-600 ">
+                <div className="border-l-8 bg-gray-50 mt-3  border-l-blue-600 ">
                   <div className="ml-3">
                     <p>
                       Type: <span className="font-bold">{posts.type}</span>
                     </p>
                     Link:
-                    <a
-                      href={`${posts.link}`}
-                      className="text-blue-500"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      ลิงค์
-                    </a>
+                    <Link href={`${posts.url}`}>
+                      <a
+                        className="text-blue-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        ลิงค์
+                      </a>
+                    </Link>
                     <p>Date: {posts.date}</p>
                     <p>By: {posts.user_id}</p>
                   </div>
@@ -72,7 +78,7 @@ function Card_order() {
               </div>
             </a>
             <hr />
-          </>
+          
         </>
       ))}
     </>

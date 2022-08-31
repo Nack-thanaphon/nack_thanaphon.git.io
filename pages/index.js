@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentCard from "./component/ContentCard";
 import Profile from "./component/Profile";
+import Filter from "./component/Filter";
 
 export default function Home() {
   return (
@@ -16,7 +17,6 @@ export default function Home() {
           referrerpolicy="no-referrer"
         />
         <title>Dev-Log | Log Everything I got</title>
-       
       </Head>
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
@@ -25,29 +25,39 @@ export default function Home() {
               <div className="my-3 p-3">
                 <div className="flex justify-between py-3 my-auto">
                   <div className="my-auto">
-                    <p className="sm:text-5xl text-3xl font-bold">DEV<span className="text-blue-500">LOG.</span></p>
+                    <p className="sm:text-5xl text-3xl font-bold">
+                      DEV<span className="text-blue-500">LOG.</span>
+                    </p>
                   </div>
                   <div className="flex">
-                    <Link href={'/about'}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-clipboard-list"></i>About Me
+                    <Link href={"/about"}>
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
+                        <i className="fas fa-clipboard-list"></i>About Me
                       </a>
                     </Link>
-                    <Link href={'/สมัครงาน.pdf'}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1"><i className="fas fa-cloud-download"></i>Download
+                    <Link href={"/สมัครงาน.pdf"}>
+                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
+                        <i className="fas fa-cloud-download"></i>Download
                       </a>
                     </Link>
                   </div>
                 </div>
                 <hr />
                 <ul className="py-5">
-                  <p className="font-bold uppercase">
+                  <div className="flex mb-4 justify-between">
+                    <div className="font-bold uppercase m-0 p-0 my-auto">
+                      <i className="fab fa-gratipay text-blue-500"></i> FILTER
+                      BY :
+                    </div>
+                    <Filter />
+                  </div>
 
+                  <p className="font-bold uppercase">
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>
                   <li className="mb-1 text-muted">
                     <ContentCard />
-
                   </li>
                 </ul>
               </div>
