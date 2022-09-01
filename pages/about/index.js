@@ -77,7 +77,7 @@ export default function Home() {
                         width="100%"
                         height={350}
                         layout="fill"
-                        src="https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/283919609_575703640648489_3613975197020669755_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGjumH-GD0JMCK9znXUlbk1LlIEU89U2ZouUgRTz1TZmpd6iEBrFzsG835FqgrKtgd2tunsgCaTHRaDQPouKEYM&_nc_ohc=Dbu6SbDX5p4AX9iLC2K&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&oh=00_AT8yNBlg3mrGoJL6s0SlO9xuqzA2Nb_LFFGPwfLFaYyG2g&oe=630EA153"
+                        src="profile.jpg"
                         alt=""
                       />
                     </div>

@@ -18,7 +18,7 @@ export default function Home() {
         />
         <title>Dev-Log | Log Everything I got</title>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P35X4E752"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P35X4E752"></script>
         <script id="google-analytics" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
@@ -27,7 +27,7 @@ export default function Home() {
 
           gtag('config', 'G-3P35X4E752');
         `}
-        </script>
+        </script> */}
       </Head>
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
