@@ -51,7 +51,9 @@ function posts({ posts }) {
                           referrerpolicy="no-referrer"
                         />
                         <title>Dev-Log | {post.name}</title>
+                        <meta property="og:image" content={"https://www.โลมา.com/bos/" + post.image} />
                       </Head>
+                      
                       <div className="py-5" key={post.id} >
                         <h1 className="text-3xl"  >{post.name}</h1>
                         <img
