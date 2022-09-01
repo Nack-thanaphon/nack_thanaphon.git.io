@@ -32,7 +32,7 @@ function Card_order() {
             }
             key={posts.id}
           > 
-            <div className="col-span-1 m-2 overflow-hidden h-64">
+            <div className="col-span-1 m-2 overflow-hidden sm:h-64">
               <a
                 href={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
                 data-fancybox="gallery"
