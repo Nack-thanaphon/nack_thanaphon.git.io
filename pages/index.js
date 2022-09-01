@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ContentCard from "./component/ContentCard";
-import Footer from "./component/Footer";
 import Profile from "./component/Profile";
 import Filter from "./component/Filter";
 
@@ -18,6 +17,17 @@ export default function Home() {
           referrerpolicy="no-referrer"
         />
         <title>Dev-Log | Log Everything I got</title>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P35X4E752"></script>
+        <script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3P35X4E752');
+        `}
+        </script>
       </Head>
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
@@ -67,7 +77,7 @@ export default function Home() {
         </div>
         <Profile />
       </div>
-      <Footer />
+
     </div>
   );
 }
