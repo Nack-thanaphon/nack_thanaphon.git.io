@@ -115,13 +115,32 @@ export default function Home() {
                     <p className="font-bold uppercase">
                       <i className="fab fa-gratipay text-blue-500"></i> Design
                     </p>
-                    <div className="flex">
-                      <li>
-                        <i className="fab fa-figma text-5xl p-4"></i>
+                    <div className="flex my-4">
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://www.mindphp.com/forums/download/file.php?id=73880"
+                          alt=""
+                        />
                       </li>
-                      <li>
-                        <i className="fas fa-ad text-5xl p-4"></i>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://helpx.adobe.com/content/dam/help/en/xd/get-started/jcr_content/main-pars/step_with_text/step-with-text-pars/imageandtext/imageandtextimage/XD.png"
+                          alt=""
+                        />
                       </li>
+                      <li className="my-auto m-2">
+                        <img
+                          width={50}
+                          height={50}
+                          src="https://makerspace.engineering.nyu.edu/wp-content/uploads/2020/07/ai.png"
+                          alt=""
+                        />
+                      </li>
+
                     </div>
                     <p className="font-bold uppercase">
                       <i className="fab fa-gratipay text-blue-500"></i>{" "}
