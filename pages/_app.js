@@ -1,7 +1,26 @@
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import Router from "next/router";
+import { useState } from "react";
+import Loader from "./component/Loader";
 
-export default MyApp
+function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(false);
+  Router.events.on("routeChangeStart", (url) => {
+    setLoading(true);
+  });
+  Router.events.on("routeChangeComplete", (url) => {
+    setInterval(function () {
+      setLoading(false);
+    }, 1500);
+  });
+  return (
+    <>
+      {loading && <Loader />}
+      <Component {...pageProps} />
+    </>
+  );
+}
+export default MyApp;
+
+
