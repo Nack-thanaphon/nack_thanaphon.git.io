@@ -75,8 +75,8 @@ export default posts;
 
 export const getServerSideProps = async (context) => {
 
+  
   const postId = context.params.postId
-
   const resp = await fetch(`https://www.โลมา.com/api/get_news_id.php?id=${postId}`);
   const data = await resp.json();
 

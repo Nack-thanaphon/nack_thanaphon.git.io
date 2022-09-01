@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   Router.events.on("routeChangeStart", (url) => {
     setLoading(true);
-  });
+  },1500);
   Router.events.on("routeChangeComplete", (url) => {
     setInterval(function () {
       setLoading(false);
