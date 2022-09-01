@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ContentCard from "./component/ContentCard";
+import Footer from "./component/Footer";
 import Profile from "./component/Profile";
 import Filter from "./component/Filter";
 
@@ -66,6 +67,7 @@ export default function Home() {
         </div>
         <Profile />
       </div>
+      <Footer />
     </div>
   );
 }
