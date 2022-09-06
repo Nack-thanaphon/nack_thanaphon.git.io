@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "fancybox/dist/css/jquery.fancybox.css";
 
 function Card_order() {
   const [posts, setData] = useState(null);
@@ -19,10 +18,11 @@ function Card_order() {
   }, []);
 
   if (isLoading) return <p>Loading...</p>;
-  if (!posts) return <p>No data</p>;
+  if (!posts) return <p>No-Data..</p>;
 
   return (
     <>
+  
       {posts.result.map((posts) => (
         <>
           <a
@@ -31,7 +31,7 @@ function Card_order() {
               `news_card  ${posts.type}`
             }
             key={posts.id}
-          > 
+          >
             <div className="col-span-1 m-2 overflow-hidden sm:h-64">
               <a
                 href={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
@@ -78,7 +78,6 @@ function Card_order() {
               </div>
             </div>
           </a>
-     
         </>
       ))}
     </>

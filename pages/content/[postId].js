@@ -1,17 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import ContentCard from "../component/ContentCard";
 import Profile from "../component/Profile";
-import { useState } from "react";
+import Loader from "../component/Loader";
 
 function posts({ posts }) {
+  if (!posts) return <Loader />
 
   return (
     <>
       <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
-
-
         <div className="grid sm:grid-cols-3 ">
           <div className="sm:col-span-2 sm:m-5 ">
             <div className="p-1">
@@ -53,7 +51,7 @@ function posts({ posts }) {
                         <title>Dev-Log | {post.name}</title>
                         <meta property="og:image" content={"https://www.โลมา.com/bos/" + post.image} />
                       </Head>
-                      
+
                       <div className="py-5" key={post.id} >
                         <h1 className="text-3xl"  >{post.name}</h1>
                         <img
@@ -65,7 +63,6 @@ function posts({ posts }) {
                       </div>
                       <div dangerouslySetInnerHTML={{ __html: post.detail }}></div>
                     </>
-
                   })}
                 </div>
               </div>
@@ -83,9 +80,11 @@ export default posts;
 export const getServerSideProps = async (context) => {
 
 
+
   const postId = context.params.postId
   const resp = await fetch(`https://www.โลมา.com/api/get_news_id.php?id=${postId}`);
   const data = await resp.json();
+
 
   return {
     props: {
