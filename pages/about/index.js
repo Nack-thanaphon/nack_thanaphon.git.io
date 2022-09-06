@@ -6,7 +6,6 @@ import Profile from "../component/Profile";
 
 export default function Home() {
   return (
-   
     <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
       <Head>
         <link
@@ -16,6 +15,7 @@ export default function Home() {
           crossOrigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <title>Dev-Log | AboutME</title>
       </Head>
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
@@ -41,7 +41,7 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                
+
                 <div className="py-5 ">
                   <p className="py-3 text-lg uppercase font-bold  text-blue-800">
                     <i className="fab fa-gratipay text-blue-500"></i> About Me
@@ -69,8 +69,8 @@ export default function Home() {
                         In the distance, there is knowledge and self-development
                         every day. So I started to study Algoritism, OOP writing
                         and Functional Programming to study Framwork. Node.js
-                        next.js express.js  Bootstrap laravel and
-                        study more in Version Control section Git Docker study
+                        next.js express.js Bootstrap laravel and study more in
+                        Version Control section Git Docker study
                       </p>
                     </div>
                     <div className="sm:inline-grid p-4	hidden">
@@ -118,28 +118,13 @@ export default function Home() {
                     </p>
                     <ul className="flex my-4">
                       <li className="my-auto m-2">
-                        <Image
-                          width={50}
-                          height={50}
-                          src="/figma.png"
-                          alt=""
-                        />
+                        <Image width={50} height={50} src="/figma.png" alt="" />
                       </li>
                       <li className="my-auto m-2">
-                        <Image
-                          width={50}
-                          height={50}
-                          src="/XD.png"
-                          alt=""
-                        />
+                        <Image width={50} height={50} src="/XD.png" alt="" />
                       </li>
                       <li className="my-auto m-2">
-                        <Image
-                          width={50}
-                          height={50}
-                          src="/ai.png"
-                          alt=""
-                        />
+                        <Image width={50} height={50} src="/ai.png" alt="" />
                       </li>
                     </ul>
                     <p className="font-bold uppercase">
@@ -173,12 +158,7 @@ export default function Home() {
                       </li>
 
                       <li className="my-auto m-2">
-                        <Image
-                          width={50}
-                          height={50}
-                          src="/1975.png"
-                          alt=""
-                        />
+                        <Image width={50} height={50} src="/1975.png" alt="" />
                       </li>
                       <li className="my-auto m-2">
                         <Image
@@ -189,12 +169,7 @@ export default function Home() {
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <Image
-                          width={50}
-                          height={50}
-                          src="/ci.webp"
-                          alt=""
-                        />
+                        <Image width={50} height={50} src="/ci.webp" alt="" />
                       </li>
                       <li className="my-auto m-2">
                         <Image
