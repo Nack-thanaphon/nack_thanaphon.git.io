@@ -32,11 +32,6 @@ function Card_order() {
             key={posts.id}
           >
             <div className="col-span-1 m-2 overflow-hidden sm:h-64">
-              <a
-                href={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
-                data-fancybox="gallery"
-                data-caption={posts.image}
-              >
                 <img
                   src={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
                   alt={posts.title}
@@ -45,7 +40,6 @@ function Card_order() {
                   height="100%"
                   layout="responsive"
                 />
-              </a>
             </div>
             <div className="m-2   col-span-2 flex flex-col justify-between">
               <p className="sm:text-3xl pt-3 sm:pt-0 text-2xl font-bold text-start ">
