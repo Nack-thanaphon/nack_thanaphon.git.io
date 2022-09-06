@@ -37,10 +37,10 @@ function Card_order() {
                 data-fancybox="gallery"
                 data-caption={posts.image}
               >
-                <Image
+                <img
                   src={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
                   alt={posts.title}
-                  className="w-full object-cover md:h-full"
+                  className="w-full object-cover hover:scale-105 ease-in duration-200 md:h-full"
                   width="100%"
                   height="100%"
                   layout="responsive"
