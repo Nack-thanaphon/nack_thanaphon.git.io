@@ -22,7 +22,6 @@ function Card_order() {
 
   return (
     <>
-  
       {posts.result.map((posts) => (
         <>
           <a
@@ -38,11 +37,13 @@ function Card_order() {
                 data-fancybox="gallery"
                 data-caption={posts.image}
               >
-                <img
+                <Image
                   src={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
                   alt={posts.title}
-                  className=" w-full object-cover md:h-full "
+                  className="w-full object-cover md:h-full"
                   width="100%"
+                  height="100%"
+                  layout="responsive"
                 />
               </a>
             </div>

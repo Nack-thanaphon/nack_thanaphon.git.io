@@ -52,7 +52,7 @@ export default function Profile() {
                     <li>
                       <ul className="flex sm:justify-start justify-center my-3">
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
                             src="/gibbon.jpg"
@@ -60,51 +60,51 @@ export default function Profile() {
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
-                            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Mahidol_U.png"
+                            src="/Mahidol_U.png"
                             alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
-                            src="https://medias.unifrance.org/medias/36/139/232228/format_hd/wetv.jpg"
+                            src="/wetv.jpg"
                             alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
-                            src="https://yt3.ggpht.com/ytc/AMLnZu-W4SowAHU_G_FEra9SiEXD2yr1x7QlXRg3MGSmrA=s900-c-k-c0x00ffffff-no-rj"
-                            alt="tailwind css"
+                            src="/kene.jpg"
+                            alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
-                            src="https://cf.shopee.co.th/file/a6488cd1f1d04772d961df1aa79aaea4"
-                            alt="tailwind css"
+                            src="/ptt.jpg"
+                            alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
+                          <Image
                             width="25px"
                             height="25px"
-                            src="https://aun-hpn.or.th/img/logo/Logo.png"
-                            alt="tailwind css"
+                            src="/Logo.png"
+                            alt=""
                           />
                         </li>
                         <li className="my-auto m-2">
-                          <img
-                            width="40px"
+                          <Image
+                            width="100%"
                             height="40px"
-                            src="https://www.mugh.or.th/issets/img/footer/logo.jpg"
-                            alt="tailwind css"
+                            src="/logo.jpg"
+                            alt=""
                           />
                         </li>
 

@@ -54,11 +54,13 @@ function posts({ posts }) {
 
                       <div className="py-5" key={post.id} >
                         <h1 className="text-3xl"  >{post.name}</h1>
-                        <img
+                        <Image
                           src={"https://www.โลมา.com/bos/" + post.image}
                           alt={post.title}
-                          className="w-full object-cover md:h-full py-5"
+                          className="w-full  md:h-full py-5"
                           width="100%"
+                          height="50%"
+                          layout='responsive'
                         />
                       </div>
                       <div dangerouslySetInnerHTML={{ __html: post.detail }}></div>

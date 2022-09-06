@@ -6,6 +6,7 @@ import Profile from "../component/Profile";
 
 export default function Home() {
   return (
+   
     <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
       <Head>
         <link
@@ -40,7 +41,7 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <hr />
+                
                 <div className="py-5 ">
                   <p className="py-3 text-lg uppercase font-bold  text-blue-800">
                     <i className="fab fa-gratipay text-blue-500"></i> About Me
@@ -68,16 +69,16 @@ export default function Home() {
                         In the distance, there is knowledge and self-development
                         every day. So I started to study Algoritism, OOP writing
                         and Functional Programming to study Framwork. Node.js
-                        next.js express.js tailwind css Bootstrap laravel and
+                        next.js express.js  Bootstrap laravel and
                         study more in Version Control section Git Docker study
                       </p>
                     </div>
                     <div className="sm:inline-grid p-4	hidden">
-                      <img
+                      <Image
                         width="100%"
-                        height={350}
-                        layout="fill"
-                        src="profile.jpg"
+                        height="100%"
+                        layout="responsive"
+                        src="/profile.jpg"
                         alt=""
                       />
                     </div>
@@ -111,117 +112,116 @@ export default function Home() {
                     departments within the hospital.
                   </p>
 
-                  <ul className="py-5">
+                  <div className="py-5">
                     <p className="font-bold uppercase">
                       <i className="fab fa-gratipay text-blue-500"></i> Design
                     </p>
-                    <div className="flex my-4">
+                    <ul className="flex my-4">
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://www.mindphp.com/forums/download/file.php?id=73880"
+                          src="/figma.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://helpx.adobe.com/content/dam/help/en/xd/get-started/jcr_content/main-pars/step_with_text/step-with-text-pars/imageandtext/imageandtextimage/XD.png"
+                          src="/XD.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://makerspace.engineering.nyu.edu/wp-content/uploads/2020/07/ai.png"
+                          src="/ai.png"
                           alt=""
                         />
                       </li>
-
-                    </div>
+                    </ul>
                     <p className="font-bold uppercase">
                       <i className="fab fa-gratipay text-blue-500"></i>{" "}
                       Application Program
                     </p>
-                    <div className="flex my-3">
+                    <ul className="flex my-3">
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://cdn-icons-png.flaticon.com/512/281/281761.png"
+                          src="/281761.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LINE_New_App_Icon_%282020-12%29.png"
+                          src="/LINE_New_App_Icon_%282020-12%29.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://cdn-icons-png.flaticon.com/512/300/300221.png"
+                          src="/300221.png"
                           alt=""
                         />
                       </li>
 
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://cdn-icons-png.flaticon.com/512/1/1975.png"
+                          src="/1975.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://cdn-icons-png.flaticon.com/512/919/919836.png"
+                          src="/919836.png"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfA9saZjv6q5LESFvG0kFqCWKyDY8GSwcY9TDkTFkTay-zXp30U2ydvFQoEYBMeh2mg4c&usqp=CAU"
+                          src="/ci.webp"
                           alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://www.drupal.org/files/project-images/screenshot_361.png"
-                          alt="tailwind css"
+                          src="/screenshot_361.jpg"
+                          alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
+                        <Image
                           width={50}
                           height={50}
-                          src="https://i0.wp.com/devbanban.com/wp-content/uploads/2018/05/ci.png?fit=431%2C512&ssl=1"
-                          alt="tailwind css"
+                          src="/bootstrap.jpg"
+                          alt=""
                         />
                       </li>
                       <li className="my-auto m-2">
-                        <img
-                          width={50}
+                        <Image
+                          width="100%"
                           height={50}
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
-                          alt="tailwind css"
+                          src="/1200px-Nextjs-logo.svg.png"
+                          alt=""
                         />
                       </li>
-                    </div>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

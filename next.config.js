@@ -9,7 +9,7 @@ module.exports = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["localhost"],
+    domains: ["www.xn--y3ch4b7c.com"],
     formats: ['image/avif', 'image/webp'],
   },
   pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
