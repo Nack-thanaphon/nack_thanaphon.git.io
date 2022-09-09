@@ -53,13 +53,13 @@ export default function Home() {
                   </div>
                 </div>
                 <hr />
-                <div className="flex my-4 justify-between">
+                {/* <div className="flex my-4 justify-between">
                   <div className="font-bold uppercase m-0 p-0 my-auto">
                     <i className="fab fa-gratipay text-blue-500"></i> FILTER
                     BY :
                   </div>
                   <Filter />
-                </div>
+                </div> */}
                 <ul className="py-5 z-50">
                   <p className="font-bold uppercase">
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
