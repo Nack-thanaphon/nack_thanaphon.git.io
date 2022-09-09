@@ -42,34 +42,33 @@ export default function Home() {
                   <div className="flex">
                     <Link href={"/about"}>
                       <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-clipboard-list"></i>About Me
+                        <i className="fas fa-clipboard-list"></i> About Me
                       </a>
                     </Link>
                     <Link href={"/สมัครงาน.pdf"}>
                       <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-cloud-download"></i>Download
+                        <i className="fas fa-cloud-download"></i> Download
                       </a>
                     </Link>
                   </div>
                 </div>
                 <hr />
-                <ul className="py-5 z-50">
-                  <div className="flex mb-4 justify-between">
+                  <div className="flex my-4 justify-between">
                     <div className="font-bold uppercase m-0 p-0 my-auto">
                       <i className="fab fa-gratipay text-blue-500"></i> FILTER
                       BY :
                     </div>
                     <Filter />
                   </div>
-
+                <ul className="py-5 z-50">
                   <p className="font-bold uppercase">
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>
-                  <li className=" mb-1 text-muted">
-                    <ContentCard />
-                  </li>
                 </ul>
+                  <div className="grid grid-cols-3 mb-1 text-muted">
+                    <ContentCard />
+                  </div>
               </div>
             </div>
           </div>

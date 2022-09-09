@@ -31,12 +31,12 @@ export default function Home() {
                   <div className="flex">
                     <Link href={"/"}>
                       <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-clipboard-list"></i>Back
+                        <i className="fas fa-clipboard-list"></i> Back
                       </a>
                     </Link>
                     <Link href={"/สมัครงาน.pdf"}>
                       <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-cloud-download"></i>Download
+                        <i className="fas fa-cloud-download"></i> Download
                       </a>
                     </Link>
                   </div>

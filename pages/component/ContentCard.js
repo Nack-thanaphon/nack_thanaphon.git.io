@@ -26,12 +26,11 @@ function Card_order() {
         <>
           <a
             className={
-              "sm:grid grid-cols-3 my-5 rounded-lg m-4   shadow-lg " +
-              `news_card  ${posts.type}`
+              "col-span-3 sm:col-span-1 my-5 rounded-lg m-1 border-2 border-dark hover:border-blue-400"
             }
             key={posts.id}
           >
-            <div className="col-span-1 m-2 overflow-hidden sm:h-64">
+            <div className=" m-2 overflow-hidden sm:h-64">
                 <img
                   src={"https://www.xn--y3ch4b7c.com/bos/" + posts.image}
                   alt={posts.title}
@@ -41,22 +40,24 @@ function Card_order() {
                   layout="responsive"
                 />
             </div>
-            <div className="m-2   col-span-2 flex flex-col justify-between">
-              <p className="sm:text-3xl pt-3 sm:pt-0 text-2xl font-bold text-start ">
+            <div className="m-2 col-span-2 flex flex-col justify-between">
+              <p className="sm:text-md mt-3 sm:pt-0 text-xl font-bold text-start truncate">
                 {posts.name}
               </p>
-              <p className="my-4">
+              <p className="text-gray-600">By: {posts.user_id}</p>
+              <p className="my-3">
                 <Link href={"content/" + [posts.id]}>
-                  <a className="text-white rounded-full px-5 p-1   bg-gradient-to-r from-blue-400 to-blue-900">
+                  <a className="text-white rounded-full px-3 py-1   bg-gradient-to-r from-blue-400 to-blue-900">
                     <i class="fa-solid fa-thumbs-up"></i> อ่านต่อ..
                   </a>
                 </Link>
               </p>
-              <div className="border-l-8 bg-gray-50 mt-3  border-l-blue-600 ">
+              <div className="border-l-8 bg-gray-50   border-l-blue-600 border ">
                 <div className="ml-3">
                   <p>
                     Type: <span className="font-bold">{posts.type}</span>
                   </p>
+                  <p className="text-gray-600">Date: {posts.date}</p>
                   Link:
                   <Link href={`${posts.url}`}>
                     <a
@@ -64,11 +65,11 @@ function Card_order() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      ลิงค์
+                      Click me
                     </a>
                   </Link>
-                  <p>Date: {posts.date}</p>
-                  <p>By: {posts.user_id}</p>
+                  
+                 
                 </div>
               </div>
             </div>
