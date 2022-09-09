@@ -6,7 +6,7 @@ import Profile from "../component/Profile";
 
 export default function Home() {
   return (
-    <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
+    <div className=" mx-auto  h-full m-0 p-0">
       <Head>
         <link
           rel="stylesheet"

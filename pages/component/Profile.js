@@ -6,8 +6,8 @@ export default function Profile() {
   return (
     <div className="sm:m-8">
       <div className="p-1">
-        <div className="shadow-lg rounded-sm bg-white sm:fixed   ">
-          <div className="p-5">
+        <div className="shadow- rmdounded-sm bg-white sm:fixed  ">
+          <div className="p-2">
             <div className="grid justify-items-center p-4">
               <Image
                 className="rounded-full"

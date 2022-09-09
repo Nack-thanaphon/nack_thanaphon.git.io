@@ -6,7 +6,7 @@ import Filter from "./component/Filter";
 
 export default function Home() {
   return (
-    <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
+    <div className=" mx-auto  h-full  m-0 p-0">
       <Head>
         <link
           rel="stylesheet"
@@ -53,22 +53,22 @@ export default function Home() {
                   </div>
                 </div>
                 <hr />
-                  <div className="flex my-4 justify-between">
-                    <div className="font-bold uppercase m-0 p-0 my-auto">
-                      <i className="fab fa-gratipay text-blue-500"></i> FILTER
-                      BY :
-                    </div>
-                    <Filter />
+                <div className="flex my-4 justify-between">
+                  <div className="font-bold uppercase m-0 p-0 my-auto">
+                    <i className="fab fa-gratipay text-blue-500"></i> FILTER
+                    BY :
                   </div>
+                  <Filter />
+                </div>
                 <ul className="py-5 z-50">
                   <p className="font-bold uppercase">
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>
                 </ul>
-                  <div className="grid grid-cols-3 mb-1 text-muted">
-                    <ContentCard />
-                  </div>
+                <div className="grid grid-cols-3 mb-1 text-muted">
+                  <ContentCard />
+                </div>
               </div>
             </div>
           </div>
