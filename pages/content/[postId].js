@@ -35,7 +35,7 @@ function posts({ posts }) {
                   </div>
                   <hr />
 
-                  {posts.result.map((post) => {
+                  {posts.result?.map((post) => {
                     return (
                       <>
                         <Header />
