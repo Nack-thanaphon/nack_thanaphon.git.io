@@ -8,24 +8,11 @@ import { useState } from "react";
 
 
 
-const handleClick = (e, tag) => {
-    const card = document.getElementsByClassName("news_card")
-    var card2 = document.getElementsByClassName(tag)
 
-    console.log(tag)
-    card[0].style.display = 'none'
-
-    if (tag == "all") {
-        card.style.display = 'block'
-    } else {
-        card2.style.display = 'block'
-    }
-
-}
-
-
-function Filter() {
+function Filter(props) {
     const [typeData, setData] = useState();
+    const { value, OnvalueChange } = props;
+
     useEffect(() => {
         async function fetchAll() {
             const resp = await fetch("https://xn--y3ch4b7c.com/api/get_newsType.php");
@@ -58,14 +45,14 @@ function Filter() {
                     <div className="py-1">
                         {typeData?.map((resp) => {
                             return (
-                                <Menu.Item onClick={(e) => handleClick(e, resp.type)}
+                                <Menu.Item
                                 >
                                     <a
                                         href="#"
                                         className={(
                                             'block px-4 py-2 text-sm hover:bg-blue-100'
                                         )}
-
+                                        onClick={() => { OnvalueChange(resp.type) }}
                                     >
                                         {resp.type}
                                     </a>

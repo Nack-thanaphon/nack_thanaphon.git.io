@@ -1,33 +1,42 @@
-import Head from "next/head";
 import Link from "next/link";
 import ContentCard from "./component/ContentCard";
 import Profile from "./component/Profile";
 import Filter from "./component/Filter";
+import Header from "./component/Header";
+import { useEffect } from "react";
+import { useState } from "react";
 
-export default function Home() {
+function Home() {
+  const [isLoading, setLoading] = useState(false);
+  const [postData, setData] = useState(null)
+  const [searchData, setSearchData] = useState('')
+
+  useEffect(() => {
+    async function fetchAll() {
+      setLoading(true);
+      const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_news.php");
+      const data = await resp.json();
+      setData(data.result);
+      setLoading(false);
+    }
+    fetchAll();
+  }, []);
+
+  if (isLoading) return <p>Loading...</p>;
+
+  const filterData = postData?.filter((postResp) => {
+    return postResp.type.includes(searchData);
+  })
+
+
+  const postFecth = filterData?.map((postResp) => {
+    return <ContentCard key={postResp.id} data={postResp} />
+
+  });
+
   return (
     <div className=" mx-auto  h-full  m-0 p-0">
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-          crossOrigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-        <title>Dev-Log | Log Everything I got</title>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P35X4E752"></script>
-        <script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-3P35X4E752');
-        `}
-        </script>
-      </Head>
+      <Header />
       <div className="grid sm:grid-cols-3 ">
         <div className="sm:col-span-2 sm:m-5 ">
           <div className="p-1">
@@ -53,21 +62,21 @@ export default function Home() {
                   </div>
                 </div>
                 <hr />
-                {/* <div className="flex my-4 justify-between">
+                <div className="flex my-4 justify-between">
                   <div className="font-bold uppercase m-0 p-0 my-auto">
                     <i className="fab fa-gratipay text-blue-500"></i> FILTER
                     BY :
                   </div>
-                  <Filter />
-                </div> */}
-                <ul className="py-5 z-50">
+                  <Filter  OnvalueChange={setSearchData} />
+                </div>
+                <div className="py-5 z-50">
                   <p className="font-bold uppercase">
                     <i className="fab fa-gratipay text-blue-500"></i> Lastest
                     Project
                   </p>
-                </ul>
+                </div>
                 <div className="grid grid-cols-3 mb-1 text-muted">
-                  <ContentCard />
+                  {postFecth}
                 </div>
               </div>
             </div>
@@ -79,3 +88,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home;
