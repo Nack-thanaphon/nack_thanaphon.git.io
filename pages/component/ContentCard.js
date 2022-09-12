@@ -14,7 +14,7 @@ function ContentCard(props) {
       >
         <div className=" m-2 overflow-hidden sm:h-64">
           <img
-            src={"https://www.xn--y3ch4b7c.com/bos/" + data.image}
+            src={"https://www.xn--y3ch4b7c.com/bos/" + data?.image}
             alt={data.title}
             className="w-full object-cover hover:scale-105 ease-in duration-200 md:h-full"
             width="100%"
