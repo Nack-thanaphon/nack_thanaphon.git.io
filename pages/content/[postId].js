@@ -1,6 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
+import Header from "../component/Header";
 import Profile from "../component/Profile";
 import Loader from "../component/Loader";
 
@@ -39,31 +38,7 @@ function posts({ posts }) {
                   {posts.result.map((post) => {
                     return (
                       <>
-                        <Head>
-                          <link
-                            rel="stylesheet"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-                            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-                            crossOrigin="anonymous"
-                            referrerpolicy="no-referrer"
-                          />
-                          <title>Dev-Log | {post.name}</title>
-                          <meta
-                            property="og:image"
-                            content={"https://www.โลมา.com/bos/" + post.image}
-                          />
-                          <link
-                            rel="stylesheet"
-                            href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-                            type="text/css"
-                            media="screen"
-                          />
-                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" />
-                          <script
-                            type="text/javascript"
-                            src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-                          />
-                        </Head>
+                        <Header />
 
                         <div className="w-full md:h-full py-5 " key={post.id}>
                           <h1 className="text-3xl">{post.name}</h1>
