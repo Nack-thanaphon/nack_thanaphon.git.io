@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function Card_order(props) {
+function ContentCard(props) {
   const { data } = props;
 
   return (
@@ -58,4 +58,4 @@ function Card_order(props) {
   );
 }
 
-export default Card_order;
+export default ContentCard;
