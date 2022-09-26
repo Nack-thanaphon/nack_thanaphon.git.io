@@ -15,7 +15,7 @@ function Filter(props) {
 
     useEffect(() => {
         async function fetchAll() {
-            const resp = await fetch("https://xn--y3ch4b7c.com/api/get_newsType.php");
+            const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_newsType.php");
             const data = await resp.json();
             setData(data.result);
         }
@@ -67,17 +67,6 @@ function Filter(props) {
         </Menu >
     )
 }
-
-
-// async function Search(param) {
-//     await alert(param)
-//     // $(".news_card").attr("style", "display: none !important");
-//     // if (param == "all") {
-//     //     $(".news_card").attr("style", "display: block !important");
-//     // } else {
-//     //     $("." + param).attr("style", "display: block !important");
-//     // }
-// }
 
 
 export default Filter;
