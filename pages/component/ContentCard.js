@@ -3,6 +3,7 @@ import Link from "next/link";
 
 function ContentCard(props) {
   const { data } = props;
+  const { status } = props;
 
   return (
     <>
@@ -21,6 +22,7 @@ function ContentCard(props) {
             height="100%"
             layout="responsive"
           />
+          <p>  {status?.statustest}</p>
         </div>
         <div className="m-2 col-span-2 flex flex-col justify-between">
           <p className="sm:text-md mt-3 sm:pt-0 text-xl font-bold text-start truncate">

@@ -73,10 +73,11 @@ export default function Home() {
                         Version Control section Git Docker study
                       </p>
                     </div>
-                    <div className="sm:inline-grid p-4	hidden">
+                    <div className="sm:inline-grid p-4 	hidden">
                       <Image
                         width="100%"
                         height="100%"
+              
                         layout="responsive"
                         src="/profile.jpg"
                         alt=""

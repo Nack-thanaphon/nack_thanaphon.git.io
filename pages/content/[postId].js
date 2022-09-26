@@ -4,11 +4,10 @@ import Profile from "../component/Profile";
 import Loader from "../component/Loader";
 
 function posts({ posts }) {
-  if (!posts) return <Loader />;
 
   return (
     <>
-      <div className=" mx-auto  h-full bg-blue-600 m-0 p-0">
+      <div className=" mx-auto  h-full m-0 p-0">
         <div className="grid sm:grid-cols-3 ">
           <div className="sm:col-span-2 sm:m-5 ">
             <div className="p-1">
