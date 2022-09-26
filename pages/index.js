@@ -7,22 +7,22 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 function Home() {
-  const [isLoading, setLoading] = useState(false);
+
   const [postData, setData] = useState(null)
   const [searchData, setSearchData] = useState('')
 
   useEffect(() => {
     async function fetchAll() {
-      setLoading(true);
+ 
       const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_news.php");
       const data = await resp.json();
       setData(data.result);
-      setLoading(false);
+   
     }
     fetchAll();
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
+
 
   const filterData = postData?.filter((postResp) => {
     return postResp.type.includes(searchData);
