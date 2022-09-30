@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import ContentCard from "../component/ContentCard";
+import Navbar from "../component/Navbar";
 import Profile from "../component/Profile";
+
 
 export default function Home() {
   return (
@@ -29,16 +29,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex">
-                    <Link href={"/"}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-clipboard-list"></i> Back
-                      </a>
-                    </Link>
-                    <Link href={"/สมัครงาน.pdf"}>
-                      <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-cloud-download"></i> Download
-                      </a>
-                    </Link>
+                    <Navbar data="Back" goto="/" />
                   </div>
                 </div>
 
@@ -77,7 +68,7 @@ export default function Home() {
                       <Image
                         width="100%"
                         height="100%"
-              
+
                         layout="responsive"
                         src="/profile.jpg"
                         alt=""

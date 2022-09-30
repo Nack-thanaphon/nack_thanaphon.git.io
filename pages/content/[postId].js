@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Header from "../component/Header";
 import Profile from "../component/Profile";
-import Loader from "../component/Loader";
+import Navbar from "../component/Navbar";
 
 function posts({ posts }) {
 
@@ -20,25 +19,14 @@ function posts({ posts }) {
                       </p>
                     </div>
                     <div className="flex">
-                      <Link href={"/"}>
-                        <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                          <i className="fas fa-clipboard-list"></i> Back
-                        </a>
-                      </Link>
-                      <Link href={"/สมัครงาน.pdf"}>
-                        <a className="bg-gradient-to-r from-blue-500 to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                          <i className="fas fa-cloud-download"></i> Download
-                        </a>
-                      </Link>
+                      <Navbar data="Back"  goto={"./"} />
                     </div>
                   </div>
                   <hr />
-
                   {posts.result?.map((post) => {
                     return (
                       <>
                         <Header />
-
                         <div className="w-full md:h-full py-5 " key={post.id}>
                           <h1 className="text-3xl">{post.name}</h1>
                           <div className="object-contain py-4">

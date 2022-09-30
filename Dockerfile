@@ -1,8 +1,8 @@
-FROM node:13.3.0-alpine
+FROM node:18-alpine3.15
 
 WORKDIR /app
 COPY . .
 
 RUN npm install
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "production"]

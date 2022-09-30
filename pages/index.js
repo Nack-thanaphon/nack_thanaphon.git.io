@@ -5,6 +5,7 @@ import Filter from "./component/Filter";
 import Header from "./component/Header";
 import { useEffect } from "react";
 import { useState } from "react";
+import Navbar from "./component/Navbar";
 
 function Home() {
 
@@ -13,11 +14,11 @@ function Home() {
 
   useEffect(() => {
     async function fetchAll() {
- 
+
       const resp = await fetch("https://www.xn--y3ch4b7c.com/api/get_news.php");
       const data = await resp.json();
       setData(data.result);
-   
+
     }
     fetchAll();
   }, []);
@@ -49,16 +50,7 @@ function Home() {
                     </p>
                   </div>
                   <div className="flex">
-                    <Link href={"/about"}>
-                      <a className="bg-gradient-to-r from-blue-500 text-sm to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-clipboard-list"></i> About Me
-                      </a>
-                    </Link>
-                    <Link href={"/สมัครงาน.pdf"}>
-                      <a className="bg-gradient-to-r from-blue-500 text-sm to-blue-900 text-white  sm:p-2 p-1 rounded-md m-1">
-                        <i className="fas fa-cloud-download"></i> Download
-                      </a>
-                    </Link>
+                    <Navbar data="About Me" goto="/about" />
                   </div>
                 </div>
                 <hr />
@@ -67,7 +59,7 @@ function Home() {
                     <i className="fab fa-gratipay text-blue-500"></i> FILTER
                     BY :
                   </div>
-                  <Filter  OnvalueChange={setSearchData} />
+                  <Filter OnvalueChange={setSearchData} />
                 </div>
                 <div className="py-5 z-50">
                   <p className="font-bold uppercase">
@@ -75,7 +67,7 @@ function Home() {
                     Project
                   </p>
                 </div>
-                <div className="grid grid-cols-3 mb-1 text-muted">
+                <div className="grid grid-cols-1 mb-1 text-muted">
                   {postFecth}
                 </div>
               </div>
